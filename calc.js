@@ -42,8 +42,7 @@ function mathOperation() {
       break;
     case "/":
       if (b === "0") {
-        out.textContent = "Error";
-        a = "";
+        a = "Error";
         b = "";
         sign = "";
         return;
