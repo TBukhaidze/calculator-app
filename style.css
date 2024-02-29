@@ -21,6 +21,7 @@ body {
   justify-content: end;
   align-items: end;
   margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .calc-screen p {
