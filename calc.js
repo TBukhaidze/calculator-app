@@ -57,6 +57,10 @@ document.querySelector(".ac").onclick = clearAll;
 document.querySelector(".buttons").onclick = (event) => {
   const key = event.target.textContent;
 
+  if (out.textContent.length >= 8 && digit.includes(key)) {
+    return;
+  }
+
   // if click number 0-9
   if (digit.includes(key)) {
     if (b === "" && sign === "") {
