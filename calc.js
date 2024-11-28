@@ -121,6 +121,10 @@ document.querySelector(".buttons").onclick = (event) => {
 document.addEventListener("keydown", function (event) {
   const key = event.key;
 
+   if (out.textContent.length >= 8 && digit.includes(key)) {
+    return;
+  }
+
   // if clicked number 0-9
   if (digit.includes(key)) {
     if (b === "" && sign === "") {
