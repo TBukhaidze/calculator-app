@@ -22,17 +22,14 @@ function toggleSign() {
     a = a * -1;
     out.textContent = a;
   } else if (a !== "" && toggle == false) {
-    console.log(toggle);
     b = b * -1;
     out.textContent = b;
     toggle = true;
-    console.log(2);
   } else {
     let c = out.textContent * -1;
     a = c;
     out.textContent = a;
     toggle = !toggle;
-    console.log(3);
   }
 }
 
