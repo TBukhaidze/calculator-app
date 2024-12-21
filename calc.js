@@ -1,6 +1,7 @@
 let a = ""; //first number
 let b = ""; //second number
 let sign = ""; //math operation
+let toggle = false; //for toggle fn
 let finish = false;
 
 const digit = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."];
@@ -20,9 +21,18 @@ function toggleSign() {
   if (b === "") {
     a = a * -1;
     out.textContent = a;
-  } else {
+  } else if (a !== "" && toggle == false) {
+    console.log(toggle);
     b = b * -1;
     out.textContent = b;
+    toggle = true;
+    console.log(2);
+  } else {
+    let c = out.textContent * -1;
+    a = c;
+    out.textContent = a;
+    toggle = !toggle;
+    console.log(3);
   }
 }
 
